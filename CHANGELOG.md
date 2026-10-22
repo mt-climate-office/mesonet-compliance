@@ -1,6 +1,15 @@
 # Changelog
 
-## 0.1.0 (unreleased)
+## 0.1.1 (2026-10-22)
+
+- `installedInYear` reads `date_installed` as the Montana calendar date it
+  is: the API encodes that date at 00:00 UTC, so its UTC date parts are the
+  Montana date. 0.1.0 converted the instant to Montana time, which moved a
+  1 January install into the year before. No station today is affected.
+  This departs from the maintenance app, which reads the instant in the
+  viewer's timezone. Summary output is unchanged.
+
+## 0.1.0 (2026-10-22)
 
 First port. Reporting and health from mesonet-status e479aac; maintenance
 compliance from mesonet-maintenance 6fa1689. Summary schema 1.

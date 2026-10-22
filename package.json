@@ -1,6 +1,6 @@
 {
   "name": "mesonet-compliance",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Montana Mesonet network-health and maintenance ruleset, and the network-health summary it publishes to data2",
   "private": true,
   "type": "module",

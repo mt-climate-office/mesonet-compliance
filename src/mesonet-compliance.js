@@ -16,7 +16,7 @@
    ========================================================================== */
 
 /** Bump on any change to a rule's output (SemVer: a changed count is MAJOR). */
-export const RULESET_VERSION = '0.1.0';
+export const RULESET_VERSION = '0.1.1';
 /** Bump when the summary JSON changes shape. */
 export const SCHEMA_VERSION = 1;
 
@@ -296,10 +296,13 @@ export function maintenanceStations(stations) {
 }
 
 /**
- * True when the station was installed in `year`. A date-only string is read
- * as a calendar date; anything else (the API's epoch ms) goes through Date,
- * read here in Montana time. The app reads it in the viewer's timezone, which
- * is the same thing for a viewer in Montana. maintenance app.js:250-257, 189-193
+ * True when the station was installed in `year`. `date_installed` is a
+ * Montana calendar date; the API encodes it as that date at 00:00 UTC, so
+ * epoch ms are read by their UTC date parts, never converted to Montana time
+ * (which would move a 1 January install into the year before). A date-only
+ * string is read as the same calendar date. This departs from the
+ * maintenance app, which reads the instant in the viewer's timezone
+ * (app.js:250-257, 189-193) and so shifts every date back a day in Montana.
  * @param {Station} s
  * @param {number} year
  */
@@ -308,7 +311,7 @@ export function installedInYear(s, year) {
   const [y, m, d] = String(s.date_installed).slice(0, 10).split('-').map(Number);
   if (y && m && d) return new Date(Date.UTC(y, m - 1, d)).getUTCFullYear() === year;
   const t = new Date(s.date_installed).getTime();
-  return !Number.isNaN(t) && montanaYear(t) === year;
+  return !Number.isNaN(t) && new Date(t).getUTCFullYear() === year;
 }
 
 /**
