@@ -1,0 +1,16 @@
+{
+  "name": "mesonet-compliance",
+  "version": "0.1.0",
+  "description": "Montana Mesonet network-health and maintenance ruleset, and the network-health summary it publishes to data2",
+  "private": true,
+  "type": "module",
+  "exports": "./src/mesonet-compliance.js",
+  "bin": { "mesonet-compliance-summarize": "bin/summarize.js" },
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "test": "node --test",
+    "summarize": "node bin/summarize.js",
+    "equivalence": "TZ=America/Denver node scripts/equivalence.js"
+  },
+  "license": "MIT"
+}

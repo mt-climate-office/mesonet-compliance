@@ -1,0 +1,93 @@
+# Build the Lambda image, push :<sha> and :latest to ECR, point the function
+# at :<sha>, and invoke it once as a smoke test. The schedule then runs the
+# new code; no terraform needed for a code release.
+#
+# Auth is OIDC only. Repo Actions VARIABLE: AWS_ROLE_ARN, from the terraform
+# output github_actions_role_arn. Until it is set the job is skipped, so a
+# push before the first apply does not fail.
+name: deploy
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - Dockerfile
+      - .dockerignore
+      - package.json
+      - src/**
+      - lambda/**
+      - .github/workflows/deploy.yml
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
+
+# One deploy at a time, in order: a slower older run must not repoint the
+# function after a newer one.
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+env:
+  AWS_REGION: us-west-2
+  ECR_REPOSITORY: mesonet-compliance
+  FUNCTION_NAME: mesonet-compliance
+
+jobs:
+  deploy:
+    if: vars.AWS_ROLE_ARN != '' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: .nvmrc
+      - name: Tests
+        run: node --test
+
+      - uses: aws-actions/configure-aws-credentials@e1253824e5c10ff9df46874f81ed3ec929e19cfd # v6.3.0
+        with:
+          role-to-assume: ${{ vars.AWS_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+          role-duration-seconds: 3600
+      - id: ecr
+        uses: aws-actions/amazon-ecr-login@03f1aad4c6c7ffd436567f42f9384779290529bd # v2.1.7
+
+      # --provenance=false --sbom=false and oci-mediatypes=false: Lambda
+      # rejects OCI manifest lists with attestations.
+      - name: Build and push
+        env:
+          REGISTRY: ${{ steps.ecr.outputs.registry }}
+        run: |
+          IMAGE="$REGISTRY/$ECR_REPOSITORY"
+          docker buildx build --platform linux/amd64 --provenance=false --sbom=false \
+            --output=type=image,oci-mediatypes=false,push=true \
+            -t "$IMAGE:latest" -t "$IMAGE:${GITHUB_SHA}" .
+
+      # On the very first deploy the function does not exist yet: stage 2 of
+      # the first apply creates it from :latest (README "Deploying").
+      - name: Update the function and smoke-test it
+        env:
+          REGISTRY: ${{ steps.ecr.outputs.registry }}
+          # Reserved concurrency is 1: if a scheduled run is in flight the
+          # invoke is throttled, and standard mode retries it.
+          AWS_RETRY_MODE: standard
+          AWS_MAX_ATTEMPTS: '6'
+        run: |
+          set -euo pipefail
+          if ! aws lambda get-function --function-name "$FUNCTION_NAME" > /dev/null 2>&1; then
+            echo "::notice::$FUNCTION_NAME does not exist yet; image pushed. Run terraform stage 2."
+            exit 0
+          fi
+          aws lambda update-function-code --function-name "$FUNCTION_NAME" \
+            --image-uri "$REGISTRY/$ECR_REPOSITORY:${GITHUB_SHA}" > /dev/null
+          aws lambda wait function-updated-v2 --function-name "$FUNCTION_NAME"
+          aws lambda invoke --function-name "$FUNCTION_NAME" --cli-read-timeout 150 \
+            --payload '{}' response.json > invoke.json
+          cat response.json; echo
+          if jq -e '.FunctionError' invoke.json > /dev/null; then
+            echo "::error::smoke run failed; logs in /aws/lambda/$FUNCTION_NAME"
+            exit 1
+          fi

@@ -1,0 +1,2324 @@
+[
+ {
+  "station": "aceabsar",
+  "element": "air_temp_0200",
+  "description": "Air Temperature at 2 m",
+  "description_short": "Air Temperature @ 2 m",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 1
+ },
+ {
+  "station": "aceabsar",
+  "element": "ppt",
+  "description": "Net precipitation since previous report",
+  "description_short": "Precipitation",
+  "base_units": "mm",
+  "us_units": "in",
+  "sort_order": 3
+ },
+ {
+  "station": "aceabsar",
+  "element": "ppt_max_rate",
+  "description": "Maximum precipiation rate",
+  "description_short": "Max Precip Rate",
+  "base_units": "mm hr^-1",
+  "us_units": "in hr^-1",
+  "sort_order": 4
+ },
+ {
+  "station": "aceabsar",
+  "element": "bp",
+  "description": "Atmospheric Pressure",
+  "description_short": "Atmospheric Pressure",
+  "base_units": "kPa",
+  "us_units": "millibar",
+  "sort_order": 5
+ },
+ {
+  "station": "aceabsar",
+  "element": "rh",
+  "description": "Relative humidity",
+  "description_short": "Relative Humidity",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 6
+ },
+ {
+  "station": "aceabsar",
+  "element": "soil_temp_0005",
+  "description": "Soil temperature at 5 cm below surface",
+  "description_short": "Soil Temperature @ -5 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 7
+ },
+ {
+  "station": "aceabsar",
+  "element": "soil_temp_0010",
+  "description": "Soil temperature at 10 cm below surface",
+  "description_short": "Soil Temperature @ -10 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 8
+ },
+ {
+  "station": "aceabsar",
+  "element": "soil_temp_0020",
+  "description": "Soil temperature at 20 cm below surface",
+  "description_short": "Soil Temperature @ -20 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 9
+ },
+ {
+  "station": "aceabsar",
+  "element": "soil_temp_0050",
+  "description": "Soil temperature at 50 cm below surface",
+  "description_short": "Soil Temperature @ -50 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 10
+ },
+ {
+  "station": "aceabsar",
+  "element": "soil_temp_0100",
+  "description": "Soil temperature at 100 cm below surface",
+  "description_short": "Soil Temperature @ -100 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 12
+ },
+ {
+  "station": "aceabsar",
+  "element": "soil_vwc_0005",
+  "description": "Soil volumetric water content at 5 cm below surface",
+  "description_short": "Soil VWC @ -5 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 13
+ },
+ {
+  "station": "aceabsar",
+  "element": "soil_vwc_0010",
+  "description": "Soil volumetric water content at 10 cm below surface",
+  "description_short": "Soil VWC @ -10 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 14
+ },
+ {
+  "station": "aceabsar",
+  "element": "soil_vwc_0020",
+  "description": "Soil volumetric water content at 20 cm below surface",
+  "description_short": "Soil VWC @ -20 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 15
+ },
+ {
+  "station": "aceabsar",
+  "element": "soil_vwc_0050",
+  "description": "Soil volumetric water content at 50 cm below surface",
+  "description_short": "Soil VWC @ -50 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 16
+ },
+ {
+  "station": "aceabsar",
+  "element": "soil_vwc_0100",
+  "description": "Soil volumetric water content at 100 cm below surface",
+  "description_short": "Soil VWC @ -100 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 18
+ },
+ {
+  "station": "aceabsar",
+  "element": "soil_ec_blk_0005",
+  "description": "Bulk soil electrical conductivity at 5 cm below surface",
+  "description_short": "Bulk EC @ -5 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 19
+ },
+ {
+  "station": "aceabsar",
+  "element": "soil_ec_blk_0010",
+  "description": "Bulk soil electrical conductivity at 10 cm below surface",
+  "description_short": "Bulk EC @ -10 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 20
+ },
+ {
+  "station": "aceabsar",
+  "element": "soil_ec_blk_0020",
+  "description": "Bulk soil electrical conductivity at 20 cm below surface",
+  "description_short": "Bulk EC @ -20 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 21
+ },
+ {
+  "station": "aceabsar",
+  "element": "soil_ec_blk_0050",
+  "description": "Bulk soil electrical conductivity at 50 cm below surface",
+  "description_short": "Bulk EC @ -50 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 22
+ },
+ {
+  "station": "aceabsar",
+  "element": "soil_ec_blk_0100",
+  "description": "Bulk soil electrical conductivity at 100 cm below surface",
+  "description_short": "Bulk EC @ -100 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 24
+ },
+ {
+  "station": "aceabsar",
+  "element": "sol_rad",
+  "description": "Solar radiation",
+  "description_short": "Solar Radiation",
+  "base_units": "W m^-2",
+  "us_units": "W m^-2",
+  "sort_order": 25
+ },
+ {
+  "station": "aceabsar",
+  "element": "wind_dir_1000",
+  "description": "Wind direction at 10 m",
+  "description_short": "Wind Direction @ 10 m",
+  "base_units": "arcdeg",
+  "us_units": "arcdeg",
+  "sort_order": 27
+ },
+ {
+  "station": "aceabsar",
+  "element": "wind_spd_1000",
+  "description": "Wind speed at 10 m",
+  "description_short": "Wind Speed @ 10 m",
+  "base_units": "m s^-1",
+  "us_units": "mi hr^-1",
+  "sort_order": 29
+ },
+ {
+  "station": "aceabsar",
+  "element": "windgust_1000",
+  "description": "Maximum wind gust speed since previous report at 10 m",
+  "description_short": "Gust Speed @ 10 m",
+  "base_units": "m s^-1",
+  "us_units": "mi hr^-1",
+  "sort_order": 31
+ },
+ {
+  "station": "aceabsar",
+  "element": "snow_depth",
+  "description": "Snow depth",
+  "description_short": "Snow Depth",
+  "base_units": "cm",
+  "us_units": "in",
+  "sort_order": 36
+ },
+ {
+  "station": "acealbio",
+  "element": "air_temp_0200",
+  "description": "Air Temperature at 2 m",
+  "description_short": "Air Temperature @ 2 m",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 1
+ },
+ {
+  "station": "acealbio",
+  "element": "ppt",
+  "description": "Net precipitation since previous report",
+  "description_short": "Precipitation",
+  "base_units": "mm",
+  "us_units": "in",
+  "sort_order": 3
+ },
+ {
+  "station": "acealbio",
+  "element": "ppt_max_rate",
+  "description": "Maximum precipiation rate",
+  "description_short": "Max Precip Rate",
+  "base_units": "mm hr^-1",
+  "us_units": "in hr^-1",
+  "sort_order": 4
+ },
+ {
+  "station": "acealbio",
+  "element": "bp",
+  "description": "Atmospheric Pressure",
+  "description_short": "Atmospheric Pressure",
+  "base_units": "kPa",
+  "us_units": "millibar",
+  "sort_order": 5
+ },
+ {
+  "station": "acealbio",
+  "element": "rh",
+  "description": "Relative humidity",
+  "description_short": "Relative Humidity",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 6
+ },
+ {
+  "station": "acealbio",
+  "element": "soil_temp_0005",
+  "description": "Soil temperature at 5 cm below surface",
+  "description_short": "Soil Temperature @ -5 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 7
+ },
+ {
+  "station": "acealbio",
+  "element": "soil_temp_0010",
+  "description": "Soil temperature at 10 cm below surface",
+  "description_short": "Soil Temperature @ -10 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 8
+ },
+ {
+  "station": "acealbio",
+  "element": "soil_temp_0020",
+  "description": "Soil temperature at 20 cm below surface",
+  "description_short": "Soil Temperature @ -20 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 9
+ },
+ {
+  "station": "acealbio",
+  "element": "soil_temp_0050",
+  "description": "Soil temperature at 50 cm below surface",
+  "description_short": "Soil Temperature @ -50 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 10
+ },
+ {
+  "station": "acealbio",
+  "element": "soil_temp_0100",
+  "description": "Soil temperature at 100 cm below surface",
+  "description_short": "Soil Temperature @ -100 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 12
+ },
+ {
+  "station": "acealbio",
+  "element": "soil_vwc_0005",
+  "description": "Soil volumetric water content at 5 cm below surface",
+  "description_short": "Soil VWC @ -5 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 13
+ },
+ {
+  "station": "acealbio",
+  "element": "soil_vwc_0010",
+  "description": "Soil volumetric water content at 10 cm below surface",
+  "description_short": "Soil VWC @ -10 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 14
+ },
+ {
+  "station": "acealbio",
+  "element": "soil_vwc_0020",
+  "description": "Soil volumetric water content at 20 cm below surface",
+  "description_short": "Soil VWC @ -20 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 15
+ },
+ {
+  "station": "acealbio",
+  "element": "soil_vwc_0050",
+  "description": "Soil volumetric water content at 50 cm below surface",
+  "description_short": "Soil VWC @ -50 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 16
+ },
+ {
+  "station": "acealbio",
+  "element": "soil_vwc_0100",
+  "description": "Soil volumetric water content at 100 cm below surface",
+  "description_short": "Soil VWC @ -100 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 18
+ },
+ {
+  "station": "acealbio",
+  "element": "soil_ec_blk_0005",
+  "description": "Bulk soil electrical conductivity at 5 cm below surface",
+  "description_short": "Bulk EC @ -5 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 19
+ },
+ {
+  "station": "acealbio",
+  "element": "soil_ec_blk_0010",
+  "description": "Bulk soil electrical conductivity at 10 cm below surface",
+  "description_short": "Bulk EC @ -10 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 20
+ },
+ {
+  "station": "acealbio",
+  "element": "soil_ec_blk_0020",
+  "description": "Bulk soil electrical conductivity at 20 cm below surface",
+  "description_short": "Bulk EC @ -20 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 21
+ },
+ {
+  "station": "acealbio",
+  "element": "soil_ec_blk_0050",
+  "description": "Bulk soil electrical conductivity at 50 cm below surface",
+  "description_short": "Bulk EC @ -50 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 22
+ },
+ {
+  "station": "acealbio",
+  "element": "soil_ec_blk_0100",
+  "description": "Bulk soil electrical conductivity at 100 cm below surface",
+  "description_short": "Bulk EC @ -100 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 24
+ },
+ {
+  "station": "acealbio",
+  "element": "sol_rad",
+  "description": "Solar radiation",
+  "description_short": "Solar Radiation",
+  "base_units": "W m^-2",
+  "us_units": "W m^-2",
+  "sort_order": 25
+ },
+ {
+  "station": "acealbio",
+  "element": "wind_dir_1000",
+  "description": "Wind direction at 10 m",
+  "description_short": "Wind Direction @ 10 m",
+  "base_units": "arcdeg",
+  "us_units": "arcdeg",
+  "sort_order": 27
+ },
+ {
+  "station": "acealbio",
+  "element": "wind_spd_1000",
+  "description": "Wind speed at 10 m",
+  "description_short": "Wind Speed @ 10 m",
+  "base_units": "m s^-1",
+  "us_units": "mi hr^-1",
+  "sort_order": 29
+ },
+ {
+  "station": "acealbio",
+  "element": "windgust_1000",
+  "description": "Maximum wind gust speed since previous report at 10 m",
+  "description_short": "Gust Speed @ 10 m",
+  "base_units": "m s^-1",
+  "us_units": "mi hr^-1",
+  "sort_order": 31
+ },
+ {
+  "station": "acebaker",
+  "element": "air_temp_0200",
+  "description": "Air Temperature at 2 m",
+  "description_short": "Air Temperature @ 2 m",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 1
+ },
+ {
+  "station": "acebaker",
+  "element": "ppt",
+  "description": "Net precipitation since previous report",
+  "description_short": "Precipitation",
+  "base_units": "mm",
+  "us_units": "in",
+  "sort_order": 3
+ },
+ {
+  "station": "acebaker",
+  "element": "ppt_max_rate",
+  "description": "Maximum precipiation rate",
+  "description_short": "Max Precip Rate",
+  "base_units": "mm hr^-1",
+  "us_units": "in hr^-1",
+  "sort_order": 4
+ },
+ {
+  "station": "acebaker",
+  "element": "bp",
+  "description": "Atmospheric Pressure",
+  "description_short": "Atmospheric Pressure",
+  "base_units": "kPa",
+  "us_units": "millibar",
+  "sort_order": 5
+ },
+ {
+  "station": "acebaker",
+  "element": "rh",
+  "description": "Relative humidity",
+  "description_short": "Relative Humidity",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 6
+ },
+ {
+  "station": "acebaker",
+  "element": "soil_temp_0005",
+  "description": "Soil temperature at 5 cm below surface",
+  "description_short": "Soil Temperature @ -5 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 7
+ },
+ {
+  "station": "acebaker",
+  "element": "soil_temp_0010",
+  "description": "Soil temperature at 10 cm below surface",
+  "description_short": "Soil Temperature @ -10 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 8
+ },
+ {
+  "station": "acebaker",
+  "element": "soil_temp_0020",
+  "description": "Soil temperature at 20 cm below surface",
+  "description_short": "Soil Temperature @ -20 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 9
+ },
+ {
+  "station": "acebaker",
+  "element": "soil_temp_0050",
+  "description": "Soil temperature at 50 cm below surface",
+  "description_short": "Soil Temperature @ -50 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 10
+ },
+ {
+  "station": "acebaker",
+  "element": "soil_temp_0100",
+  "description": "Soil temperature at 100 cm below surface",
+  "description_short": "Soil Temperature @ -100 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 12
+ },
+ {
+  "station": "acebaker",
+  "element": "soil_vwc_0005",
+  "description": "Soil volumetric water content at 5 cm below surface",
+  "description_short": "Soil VWC @ -5 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 13
+ },
+ {
+  "station": "acebaker",
+  "element": "soil_vwc_0010",
+  "description": "Soil volumetric water content at 10 cm below surface",
+  "description_short": "Soil VWC @ -10 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 14
+ },
+ {
+  "station": "acebaker",
+  "element": "soil_vwc_0020",
+  "description": "Soil volumetric water content at 20 cm below surface",
+  "description_short": "Soil VWC @ -20 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 15
+ },
+ {
+  "station": "acebaker",
+  "element": "soil_vwc_0050",
+  "description": "Soil volumetric water content at 50 cm below surface",
+  "description_short": "Soil VWC @ -50 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 16
+ },
+ {
+  "station": "acebaker",
+  "element": "soil_vwc_0100",
+  "description": "Soil volumetric water content at 100 cm below surface",
+  "description_short": "Soil VWC @ -100 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 18
+ },
+ {
+  "station": "acebaker",
+  "element": "soil_ec_blk_0005",
+  "description": "Bulk soil electrical conductivity at 5 cm below surface",
+  "description_short": "Bulk EC @ -5 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 19
+ },
+ {
+  "station": "acebaker",
+  "element": "soil_ec_blk_0010",
+  "description": "Bulk soil electrical conductivity at 10 cm below surface",
+  "description_short": "Bulk EC @ -10 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 20
+ },
+ {
+  "station": "acebaker",
+  "element": "soil_ec_blk_0020",
+  "description": "Bulk soil electrical conductivity at 20 cm below surface",
+  "description_short": "Bulk EC @ -20 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 21
+ },
+ {
+  "station": "acebaker",
+  "element": "soil_ec_blk_0050",
+  "description": "Bulk soil electrical conductivity at 50 cm below surface",
+  "description_short": "Bulk EC @ -50 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 22
+ },
+ {
+  "station": "acebaker",
+  "element": "soil_ec_blk_0100",
+  "description": "Bulk soil electrical conductivity at 100 cm below surface",
+  "description_short": "Bulk EC @ -100 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 24
+ },
+ {
+  "station": "acebaker",
+  "element": "sol_rad",
+  "description": "Solar radiation",
+  "description_short": "Solar Radiation",
+  "base_units": "W m^-2",
+  "us_units": "W m^-2",
+  "sort_order": 25
+ },
+ {
+  "station": "acebaker",
+  "element": "wind_dir_1000",
+  "description": "Wind direction at 10 m",
+  "description_short": "Wind Direction @ 10 m",
+  "base_units": "arcdeg",
+  "us_units": "arcdeg",
+  "sort_order": 27
+ },
+ {
+  "station": "acebaker",
+  "element": "wind_spd_1000",
+  "description": "Wind speed at 10 m",
+  "description_short": "Wind Speed @ 10 m",
+  "base_units": "m s^-1",
+  "us_units": "mi hr^-1",
+  "sort_order": 29
+ },
+ {
+  "station": "acebaker",
+  "element": "windgust_1000",
+  "description": "Maximum wind gust speed since previous report at 10 m",
+  "description_short": "Gust Speed @ 10 m",
+  "base_units": "m s^-1",
+  "us_units": "mi hr^-1",
+  "sort_order": 31
+ },
+ {
+  "station": "acebaker",
+  "element": "snow_depth",
+  "description": "Snow depth",
+  "description_short": "Snow Depth",
+  "base_units": "cm",
+  "us_units": "in",
+  "sort_order": 36
+ },
+ {
+  "station": "acebento",
+  "element": "air_temp_0200",
+  "description": "Air Temperature at 2 m",
+  "description_short": "Air Temperature @ 2 m",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 1
+ },
+ {
+  "station": "acebento",
+  "element": "ppt",
+  "description": "Net precipitation since previous report",
+  "description_short": "Precipitation",
+  "base_units": "mm",
+  "us_units": "in",
+  "sort_order": 3
+ },
+ {
+  "station": "acebento",
+  "element": "ppt_max_rate",
+  "description": "Maximum precipiation rate",
+  "description_short": "Max Precip Rate",
+  "base_units": "mm hr^-1",
+  "us_units": "in hr^-1",
+  "sort_order": 4
+ },
+ {
+  "station": "acebento",
+  "element": "bp",
+  "description": "Atmospheric Pressure",
+  "description_short": "Atmospheric Pressure",
+  "base_units": "kPa",
+  "us_units": "millibar",
+  "sort_order": 5
+ },
+ {
+  "station": "acebento",
+  "element": "rh",
+  "description": "Relative humidity",
+  "description_short": "Relative Humidity",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 6
+ },
+ {
+  "station": "acebento",
+  "element": "soil_temp_0005",
+  "description": "Soil temperature at 5 cm below surface",
+  "description_short": "Soil Temperature @ -5 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 7
+ },
+ {
+  "station": "acebento",
+  "element": "soil_temp_0010",
+  "description": "Soil temperature at 10 cm below surface",
+  "description_short": "Soil Temperature @ -10 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 8
+ },
+ {
+  "station": "acebento",
+  "element": "soil_temp_0020",
+  "description": "Soil temperature at 20 cm below surface",
+  "description_short": "Soil Temperature @ -20 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 9
+ },
+ {
+  "station": "acebento",
+  "element": "soil_temp_0050",
+  "description": "Soil temperature at 50 cm below surface",
+  "description_short": "Soil Temperature @ -50 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 10
+ },
+ {
+  "station": "acebento",
+  "element": "soil_temp_0100",
+  "description": "Soil temperature at 100 cm below surface",
+  "description_short": "Soil Temperature @ -100 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 12
+ },
+ {
+  "station": "acebento",
+  "element": "soil_vwc_0005",
+  "description": "Soil volumetric water content at 5 cm below surface",
+  "description_short": "Soil VWC @ -5 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 13
+ },
+ {
+  "station": "acebento",
+  "element": "soil_vwc_0010",
+  "description": "Soil volumetric water content at 10 cm below surface",
+  "description_short": "Soil VWC @ -10 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 14
+ },
+ {
+  "station": "acebento",
+  "element": "soil_vwc_0020",
+  "description": "Soil volumetric water content at 20 cm below surface",
+  "description_short": "Soil VWC @ -20 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 15
+ },
+ {
+  "station": "acebento",
+  "element": "soil_vwc_0050",
+  "description": "Soil volumetric water content at 50 cm below surface",
+  "description_short": "Soil VWC @ -50 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 16
+ },
+ {
+  "station": "acebento",
+  "element": "soil_vwc_0100",
+  "description": "Soil volumetric water content at 100 cm below surface",
+  "description_short": "Soil VWC @ -100 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 18
+ },
+ {
+  "station": "acebento",
+  "element": "soil_ec_blk_0005",
+  "description": "Bulk soil electrical conductivity at 5 cm below surface",
+  "description_short": "Bulk EC @ -5 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 19
+ },
+ {
+  "station": "acebento",
+  "element": "soil_ec_blk_0010",
+  "description": "Bulk soil electrical conductivity at 10 cm below surface",
+  "description_short": "Bulk EC @ -10 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 20
+ },
+ {
+  "station": "acebento",
+  "element": "soil_ec_blk_0020",
+  "description": "Bulk soil electrical conductivity at 20 cm below surface",
+  "description_short": "Bulk EC @ -20 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 21
+ },
+ {
+  "station": "acebento",
+  "element": "soil_ec_blk_0050",
+  "description": "Bulk soil electrical conductivity at 50 cm below surface",
+  "description_short": "Bulk EC @ -50 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 22
+ },
+ {
+  "station": "acebento",
+  "element": "soil_ec_blk_0100",
+  "description": "Bulk soil electrical conductivity at 100 cm below surface",
+  "description_short": "Bulk EC @ -100 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 24
+ },
+ {
+  "station": "acebento",
+  "element": "sol_rad",
+  "description": "Solar radiation",
+  "description_short": "Solar Radiation",
+  "base_units": "W m^-2",
+  "us_units": "W m^-2",
+  "sort_order": 25
+ },
+ {
+  "station": "acebento",
+  "element": "wind_dir_1000",
+  "description": "Wind direction at 10 m",
+  "description_short": "Wind Direction @ 10 m",
+  "base_units": "arcdeg",
+  "us_units": "arcdeg",
+  "sort_order": 27
+ },
+ {
+  "station": "acebento",
+  "element": "wind_spd_1000",
+  "description": "Wind speed at 10 m",
+  "description_short": "Wind Speed @ 10 m",
+  "base_units": "m s^-1",
+  "us_units": "mi hr^-1",
+  "sort_order": 29
+ },
+ {
+  "station": "acebento",
+  "element": "windgust_1000",
+  "description": "Maximum wind gust speed since previous report at 10 m",
+  "description_short": "Gust Speed @ 10 m",
+  "base_units": "m s^-1",
+  "us_units": "mi hr^-1",
+  "sort_order": 31
+ },
+ {
+  "station": "acebento",
+  "element": "snow_depth",
+  "description": "Snow depth",
+  "description_short": "Snow Depth",
+  "base_units": "cm",
+  "us_units": "in",
+  "sort_order": 36
+ },
+ {
+  "station": "acedodso",
+  "element": "air_temp_0200",
+  "description": "Air Temperature at 2 m",
+  "description_short": "Air Temperature @ 2 m",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 1
+ },
+ {
+  "station": "acedodso",
+  "element": "ppt",
+  "description": "Net precipitation since previous report",
+  "description_short": "Precipitation",
+  "base_units": "mm",
+  "us_units": "in",
+  "sort_order": 3
+ },
+ {
+  "station": "acedodso",
+  "element": "ppt_max_rate",
+  "description": "Maximum precipiation rate",
+  "description_short": "Max Precip Rate",
+  "base_units": "mm hr^-1",
+  "us_units": "in hr^-1",
+  "sort_order": 4
+ },
+ {
+  "station": "acedodso",
+  "element": "bp",
+  "description": "Atmospheric Pressure",
+  "description_short": "Atmospheric Pressure",
+  "base_units": "kPa",
+  "us_units": "millibar",
+  "sort_order": 5
+ },
+ {
+  "station": "acedodso",
+  "element": "rh",
+  "description": "Relative humidity",
+  "description_short": "Relative Humidity",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 6
+ },
+ {
+  "station": "acedodso",
+  "element": "soil_temp_0005",
+  "description": "Soil temperature at 5 cm below surface",
+  "description_short": "Soil Temperature @ -5 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 7
+ },
+ {
+  "station": "acedodso",
+  "element": "soil_temp_0010",
+  "description": "Soil temperature at 10 cm below surface",
+  "description_short": "Soil Temperature @ -10 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 8
+ },
+ {
+  "station": "acedodso",
+  "element": "soil_temp_0020",
+  "description": "Soil temperature at 20 cm below surface",
+  "description_short": "Soil Temperature @ -20 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 9
+ },
+ {
+  "station": "acedodso",
+  "element": "soil_temp_0050",
+  "description": "Soil temperature at 50 cm below surface",
+  "description_short": "Soil Temperature @ -50 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 10
+ },
+ {
+  "station": "acedodso",
+  "element": "soil_temp_0100",
+  "description": "Soil temperature at 100 cm below surface",
+  "description_short": "Soil Temperature @ -100 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 12
+ },
+ {
+  "station": "acedodso",
+  "element": "soil_vwc_0005",
+  "description": "Soil volumetric water content at 5 cm below surface",
+  "description_short": "Soil VWC @ -5 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 13
+ },
+ {
+  "station": "acedodso",
+  "element": "soil_vwc_0010",
+  "description": "Soil volumetric water content at 10 cm below surface",
+  "description_short": "Soil VWC @ -10 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 14
+ },
+ {
+  "station": "acedodso",
+  "element": "soil_vwc_0020",
+  "description": "Soil volumetric water content at 20 cm below surface",
+  "description_short": "Soil VWC @ -20 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 15
+ },
+ {
+  "station": "acedodso",
+  "element": "soil_vwc_0050",
+  "description": "Soil volumetric water content at 50 cm below surface",
+  "description_short": "Soil VWC @ -50 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 16
+ },
+ {
+  "station": "acedodso",
+  "element": "soil_vwc_0100",
+  "description": "Soil volumetric water content at 100 cm below surface",
+  "description_short": "Soil VWC @ -100 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 18
+ },
+ {
+  "station": "acedodso",
+  "element": "soil_ec_blk_0005",
+  "description": "Bulk soil electrical conductivity at 5 cm below surface",
+  "description_short": "Bulk EC @ -5 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 19
+ },
+ {
+  "station": "acedodso",
+  "element": "soil_ec_blk_0010",
+  "description": "Bulk soil electrical conductivity at 10 cm below surface",
+  "description_short": "Bulk EC @ -10 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 20
+ },
+ {
+  "station": "acedodso",
+  "element": "soil_ec_blk_0020",
+  "description": "Bulk soil electrical conductivity at 20 cm below surface",
+  "description_short": "Bulk EC @ -20 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 21
+ },
+ {
+  "station": "acedodso",
+  "element": "soil_ec_blk_0050",
+  "description": "Bulk soil electrical conductivity at 50 cm below surface",
+  "description_short": "Bulk EC @ -50 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 22
+ },
+ {
+  "station": "acedodso",
+  "element": "soil_ec_blk_0100",
+  "description": "Bulk soil electrical conductivity at 100 cm below surface",
+  "description_short": "Bulk EC @ -100 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 24
+ },
+ {
+  "station": "acedodso",
+  "element": "sol_rad",
+  "description": "Solar radiation",
+  "description_short": "Solar Radiation",
+  "base_units": "W m^-2",
+  "us_units": "W m^-2",
+  "sort_order": 25
+ },
+ {
+  "station": "acedodso",
+  "element": "wind_dir_1000",
+  "description": "Wind direction at 10 m",
+  "description_short": "Wind Direction @ 10 m",
+  "base_units": "arcdeg",
+  "us_units": "arcdeg",
+  "sort_order": 27
+ },
+ {
+  "station": "acedodso",
+  "element": "wind_spd_1000",
+  "description": "Wind speed at 10 m",
+  "description_short": "Wind Speed @ 10 m",
+  "base_units": "m s^-1",
+  "us_units": "mi hr^-1",
+  "sort_order": 29
+ },
+ {
+  "station": "acedodso",
+  "element": "windgust_1000",
+  "description": "Maximum wind gust speed since previous report at 10 m",
+  "description_short": "Gust Speed @ 10 m",
+  "base_units": "m s^-1",
+  "us_units": "mi hr^-1",
+  "sort_order": 31
+ },
+ {
+  "station": "arskeogh",
+  "element": "air_temp_0244",
+  "description": "Air Temperature at 8 feet",
+  "description_short": "Air Temperature @ 8 ft",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 2
+ },
+ {
+  "station": "arskeogh",
+  "element": "ppt",
+  "description": "Net precipitation since previous report",
+  "description_short": "Precipitation",
+  "base_units": "mm",
+  "us_units": "in",
+  "sort_order": 3
+ },
+ {
+  "station": "arskeogh",
+  "element": "ppt_max_rate",
+  "description": "Maximum precipiation rate",
+  "description_short": "Max Precip Rate",
+  "base_units": "mm hr^-1",
+  "us_units": "in hr^-1",
+  "sort_order": 4
+ },
+ {
+  "station": "arskeogh",
+  "element": "bp",
+  "description": "Atmospheric Pressure",
+  "description_short": "Atmospheric Pressure",
+  "base_units": "kPa",
+  "us_units": "millibar",
+  "sort_order": 5
+ },
+ {
+  "station": "arskeogh",
+  "element": "rh",
+  "description": "Relative humidity",
+  "description_short": "Relative Humidity",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 6
+ },
+ {
+  "station": "arskeogh",
+  "element": "soil_temp_0010",
+  "description": "Soil temperature at 10 cm below surface",
+  "description_short": "Soil Temperature @ -10 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 8
+ },
+ {
+  "station": "arskeogh",
+  "element": "soil_temp_0020",
+  "description": "Soil temperature at 20 cm below surface",
+  "description_short": "Soil Temperature @ -20 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 9
+ },
+ {
+  "station": "arskeogh",
+  "element": "soil_temp_0050",
+  "description": "Soil temperature at 50 cm below surface",
+  "description_short": "Soil Temperature @ -50 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 10
+ },
+ {
+  "station": "arskeogh",
+  "element": "soil_temp_0091",
+  "description": "Soil temperature at 91 cm below surface",
+  "description_short": "Soil Temperature @ -91 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 11
+ },
+ {
+  "station": "arskeogh",
+  "element": "soil_vwc_0010",
+  "description": "Soil volumetric water content at 10 cm below surface",
+  "description_short": "Soil VWC @ -10 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 14
+ },
+ {
+  "station": "arskeogh",
+  "element": "soil_vwc_0020",
+  "description": "Soil volumetric water content at 20 cm below surface",
+  "description_short": "Soil VWC @ -20 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 15
+ },
+ {
+  "station": "arskeogh",
+  "element": "soil_vwc_0050",
+  "description": "Soil volumetric water content at 50 cm below surface",
+  "description_short": "Soil VWC @ -50 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 16
+ },
+ {
+  "station": "arskeogh",
+  "element": "soil_vwc_0091",
+  "description": "Soil volumetric water content at 91 cm below surface",
+  "description_short": "Soil VWC @ -91 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 17
+ },
+ {
+  "station": "arskeogh",
+  "element": "soil_ec_blk_0010",
+  "description": "Bulk soil electrical conductivity at 10 cm below surface",
+  "description_short": "Bulk EC @ -10 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 20
+ },
+ {
+  "station": "arskeogh",
+  "element": "soil_ec_blk_0020",
+  "description": "Bulk soil electrical conductivity at 20 cm below surface",
+  "description_short": "Bulk EC @ -20 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 21
+ },
+ {
+  "station": "arskeogh",
+  "element": "soil_ec_blk_0050",
+  "description": "Bulk soil electrical conductivity at 50 cm below surface",
+  "description_short": "Bulk EC @ -50 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 22
+ },
+ {
+  "station": "arskeogh",
+  "element": "soil_ec_blk_0091",
+  "description": "Bulk soil electrical conductivity at 91 cm below surface",
+  "description_short": "Bulk EC @ -91 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 23
+ },
+ {
+  "station": "arskeogh",
+  "element": "sol_rad",
+  "description": "Solar radiation",
+  "description_short": "Solar Radiation",
+  "base_units": "W m^-2",
+  "us_units": "W m^-2",
+  "sort_order": 25
+ },
+ {
+  "station": "arskeogh",
+  "element": "vpd_atmo",
+  "description": "Vapor pressure deficit",
+  "description_short": "VPD",
+  "base_units": "kPa",
+  "us_units": "millibar",
+  "sort_order": 26
+ },
+ {
+  "station": "arskeogh",
+  "element": "wind_dir_0244",
+  "description": "Wind direction at 8 ft",
+  "description_short": "Wind Direction @ 8 ft",
+  "base_units": "arcdeg",
+  "us_units": "arcdeg",
+  "sort_order": 28
+ },
+ {
+  "station": "arskeogh",
+  "element": "wind_spd_0244",
+  "description": "Wind speed at 8 ft",
+  "description_short": "Wind Speed @ 8 ft",
+  "base_units": "m s^-1",
+  "us_units": "mi hr^-1",
+  "sort_order": 30
+ },
+ {
+  "station": "arskeogh",
+  "element": "windgust_0244",
+  "description": "Maximum wind gust speed since previous report at 8 ft",
+  "description_short": "Gust Speed @ 8 ft",
+  "base_units": "m s^-1",
+  "us_units": "mi hr^-1",
+  "sort_order": 32
+ },
+ {
+  "station": "arskeose",
+  "element": "air_temp_0244",
+  "description": "Air Temperature at 8 feet",
+  "description_short": "Air Temperature @ 8 ft",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 2
+ },
+ {
+  "station": "arskeose",
+  "element": "ppt",
+  "description": "Net precipitation since previous report",
+  "description_short": "Precipitation",
+  "base_units": "mm",
+  "us_units": "in",
+  "sort_order": 3
+ },
+ {
+  "station": "arskeose",
+  "element": "ppt_max_rate",
+  "description": "Maximum precipiation rate",
+  "description_short": "Max Precip Rate",
+  "base_units": "mm hr^-1",
+  "us_units": "in hr^-1",
+  "sort_order": 4
+ },
+ {
+  "station": "arskeose",
+  "element": "bp",
+  "description": "Atmospheric Pressure",
+  "description_short": "Atmospheric Pressure",
+  "base_units": "kPa",
+  "us_units": "millibar",
+  "sort_order": 5
+ },
+ {
+  "station": "arskeose",
+  "element": "rh",
+  "description": "Relative humidity",
+  "description_short": "Relative Humidity",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 6
+ },
+ {
+  "station": "arskeose",
+  "element": "soil_temp_0010",
+  "description": "Soil temperature at 10 cm below surface",
+  "description_short": "Soil Temperature @ -10 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 8
+ },
+ {
+  "station": "arskeose",
+  "element": "soil_temp_0020",
+  "description": "Soil temperature at 20 cm below surface",
+  "description_short": "Soil Temperature @ -20 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 9
+ },
+ {
+  "station": "arskeose",
+  "element": "soil_temp_0050",
+  "description": "Soil temperature at 50 cm below surface",
+  "description_short": "Soil Temperature @ -50 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 10
+ },
+ {
+  "station": "arskeose",
+  "element": "soil_temp_0091",
+  "description": "Soil temperature at 91 cm below surface",
+  "description_short": "Soil Temperature @ -91 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 11
+ },
+ {
+  "station": "arskeose",
+  "element": "soil_vwc_0010",
+  "description": "Soil volumetric water content at 10 cm below surface",
+  "description_short": "Soil VWC @ -10 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 14
+ },
+ {
+  "station": "arskeose",
+  "element": "soil_vwc_0020",
+  "description": "Soil volumetric water content at 20 cm below surface",
+  "description_short": "Soil VWC @ -20 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 15
+ },
+ {
+  "station": "arskeose",
+  "element": "soil_vwc_0050",
+  "description": "Soil volumetric water content at 50 cm below surface",
+  "description_short": "Soil VWC @ -50 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 16
+ },
+ {
+  "station": "arskeose",
+  "element": "soil_vwc_0091",
+  "description": "Soil volumetric water content at 91 cm below surface",
+  "description_short": "Soil VWC @ -91 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 17
+ },
+ {
+  "station": "arskeose",
+  "element": "soil_ec_blk_0010",
+  "description": "Bulk soil electrical conductivity at 10 cm below surface",
+  "description_short": "Bulk EC @ -10 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 20
+ },
+ {
+  "station": "arskeose",
+  "element": "soil_ec_blk_0020",
+  "description": "Bulk soil electrical conductivity at 20 cm below surface",
+  "description_short": "Bulk EC @ -20 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 21
+ },
+ {
+  "station": "arskeose",
+  "element": "soil_ec_blk_0050",
+  "description": "Bulk soil electrical conductivity at 50 cm below surface",
+  "description_short": "Bulk EC @ -50 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 22
+ },
+ {
+  "station": "arskeose",
+  "element": "soil_ec_blk_0091",
+  "description": "Bulk soil electrical conductivity at 91 cm below surface",
+  "description_short": "Bulk EC @ -91 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 23
+ },
+ {
+  "station": "arskeose",
+  "element": "sol_rad",
+  "description": "Solar radiation",
+  "description_short": "Solar Radiation",
+  "base_units": "W m^-2",
+  "us_units": "W m^-2",
+  "sort_order": 25
+ },
+ {
+  "station": "arskeose",
+  "element": "vpd_atmo",
+  "description": "Vapor pressure deficit",
+  "description_short": "VPD",
+  "base_units": "kPa",
+  "us_units": "millibar",
+  "sort_order": 26
+ },
+ {
+  "station": "arskeose",
+  "element": "wind_dir_0244",
+  "description": "Wind direction at 8 ft",
+  "description_short": "Wind Direction @ 8 ft",
+  "base_units": "arcdeg",
+  "us_units": "arcdeg",
+  "sort_order": 28
+ },
+ {
+  "station": "arskeose",
+  "element": "wind_spd_0244",
+  "description": "Wind speed at 8 ft",
+  "description_short": "Wind Speed @ 8 ft",
+  "base_units": "m s^-1",
+  "us_units": "mi hr^-1",
+  "sort_order": 30
+ },
+ {
+  "station": "arskeose",
+  "element": "windgust_0244",
+  "description": "Maximum wind gust speed since previous report at 8 ft",
+  "description_short": "Gust Speed @ 8 ft",
+  "base_units": "m s^-1",
+  "us_units": "mi hr^-1",
+  "sort_order": 32
+ },
+ {
+  "station": "arskeosw",
+  "element": "air_temp_0244",
+  "description": "Air Temperature at 8 feet",
+  "description_short": "Air Temperature @ 8 ft",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 2
+ },
+ {
+  "station": "arskeosw",
+  "element": "ppt",
+  "description": "Net precipitation since previous report",
+  "description_short": "Precipitation",
+  "base_units": "mm",
+  "us_units": "in",
+  "sort_order": 3
+ },
+ {
+  "station": "arskeosw",
+  "element": "ppt_max_rate",
+  "description": "Maximum precipiation rate",
+  "description_short": "Max Precip Rate",
+  "base_units": "mm hr^-1",
+  "us_units": "in hr^-1",
+  "sort_order": 4
+ },
+ {
+  "station": "arskeosw",
+  "element": "bp",
+  "description": "Atmospheric Pressure",
+  "description_short": "Atmospheric Pressure",
+  "base_units": "kPa",
+  "us_units": "millibar",
+  "sort_order": 5
+ },
+ {
+  "station": "arskeosw",
+  "element": "rh",
+  "description": "Relative humidity",
+  "description_short": "Relative Humidity",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 6
+ },
+ {
+  "station": "arskeosw",
+  "element": "soil_temp_0010",
+  "description": "Soil temperature at 10 cm below surface",
+  "description_short": "Soil Temperature @ -10 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 8
+ },
+ {
+  "station": "arskeosw",
+  "element": "soil_temp_0020",
+  "description": "Soil temperature at 20 cm below surface",
+  "description_short": "Soil Temperature @ -20 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 9
+ },
+ {
+  "station": "arskeosw",
+  "element": "soil_temp_0050",
+  "description": "Soil temperature at 50 cm below surface",
+  "description_short": "Soil Temperature @ -50 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 10
+ },
+ {
+  "station": "arskeosw",
+  "element": "soil_temp_0091",
+  "description": "Soil temperature at 91 cm below surface",
+  "description_short": "Soil Temperature @ -91 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 11
+ },
+ {
+  "station": "arskeosw",
+  "element": "soil_vwc_0010",
+  "description": "Soil volumetric water content at 10 cm below surface",
+  "description_short": "Soil VWC @ -10 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 14
+ },
+ {
+  "station": "arskeosw",
+  "element": "soil_vwc_0020",
+  "description": "Soil volumetric water content at 20 cm below surface",
+  "description_short": "Soil VWC @ -20 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 15
+ },
+ {
+  "station": "arskeosw",
+  "element": "soil_vwc_0050",
+  "description": "Soil volumetric water content at 50 cm below surface",
+  "description_short": "Soil VWC @ -50 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 16
+ },
+ {
+  "station": "arskeosw",
+  "element": "soil_vwc_0091",
+  "description": "Soil volumetric water content at 91 cm below surface",
+  "description_short": "Soil VWC @ -91 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 17
+ },
+ {
+  "station": "arskeosw",
+  "element": "soil_ec_blk_0010",
+  "description": "Bulk soil electrical conductivity at 10 cm below surface",
+  "description_short": "Bulk EC @ -10 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 20
+ },
+ {
+  "station": "arskeosw",
+  "element": "soil_ec_blk_0020",
+  "description": "Bulk soil electrical conductivity at 20 cm below surface",
+  "description_short": "Bulk EC @ -20 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 21
+ },
+ {
+  "station": "arskeosw",
+  "element": "soil_ec_blk_0050",
+  "description": "Bulk soil electrical conductivity at 50 cm below surface",
+  "description_short": "Bulk EC @ -50 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 22
+ },
+ {
+  "station": "arskeosw",
+  "element": "soil_ec_blk_0091",
+  "description": "Bulk soil electrical conductivity at 91 cm below surface",
+  "description_short": "Bulk EC @ -91 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 23
+ },
+ {
+  "station": "arskeosw",
+  "element": "sol_rad",
+  "description": "Solar radiation",
+  "description_short": "Solar Radiation",
+  "base_units": "W m^-2",
+  "us_units": "W m^-2",
+  "sort_order": 25
+ },
+ {
+  "station": "arskeosw",
+  "element": "vpd_atmo",
+  "description": "Vapor pressure deficit",
+  "description_short": "VPD",
+  "base_units": "kPa",
+  "us_units": "millibar",
+  "sort_order": 26
+ },
+ {
+  "station": "arskeosw",
+  "element": "wind_dir_0244",
+  "description": "Wind direction at 8 ft",
+  "description_short": "Wind Direction @ 8 ft",
+  "base_units": "arcdeg",
+  "us_units": "arcdeg",
+  "sort_order": 28
+ },
+ {
+  "station": "arskeosw",
+  "element": "wind_spd_0244",
+  "description": "Wind speed at 8 ft",
+  "description_short": "Wind Speed @ 8 ft",
+  "base_units": "m s^-1",
+  "us_units": "mi hr^-1",
+  "sort_order": 30
+ },
+ {
+  "station": "arskeosw",
+  "element": "windgust_0244",
+  "description": "Maximum wind gust speed since previous report at 8 ft",
+  "description_short": "Gust Speed @ 8 ft",
+  "base_units": "m s^-1",
+  "us_units": "mi hr^-1",
+  "sort_order": 32
+ },
+ {
+  "station": "blmglsou",
+  "element": "air_temp_0244",
+  "description": "Air Temperature at 8 feet",
+  "description_short": "Air Temperature @ 8 ft",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 2
+ },
+ {
+  "station": "blmglsou",
+  "element": "ppt",
+  "description": "Net precipitation since previous report",
+  "description_short": "Precipitation",
+  "base_units": "mm",
+  "us_units": "in",
+  "sort_order": 3
+ },
+ {
+  "station": "blmglsou",
+  "element": "ppt_max_rate",
+  "description": "Maximum precipiation rate",
+  "description_short": "Max Precip Rate",
+  "base_units": "mm hr^-1",
+  "us_units": "in hr^-1",
+  "sort_order": 4
+ },
+ {
+  "station": "blmglsou",
+  "element": "bp",
+  "description": "Atmospheric Pressure",
+  "description_short": "Atmospheric Pressure",
+  "base_units": "kPa",
+  "us_units": "millibar",
+  "sort_order": 5
+ },
+ {
+  "station": "blmglsou",
+  "element": "rh",
+  "description": "Relative humidity",
+  "description_short": "Relative Humidity",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 6
+ },
+ {
+  "station": "blmglsou",
+  "element": "soil_temp_0010",
+  "description": "Soil temperature at 10 cm below surface",
+  "description_short": "Soil Temperature @ -10 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 8
+ },
+ {
+  "station": "blmglsou",
+  "element": "soil_temp_0020",
+  "description": "Soil temperature at 20 cm below surface",
+  "description_short": "Soil Temperature @ -20 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 9
+ },
+ {
+  "station": "blmglsou",
+  "element": "soil_temp_0050",
+  "description": "Soil temperature at 50 cm below surface",
+  "description_short": "Soil Temperature @ -50 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 10
+ },
+ {
+  "station": "blmglsou",
+  "element": "soil_temp_0091",
+  "description": "Soil temperature at 91 cm below surface",
+  "description_short": "Soil Temperature @ -91 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 11
+ },
+ {
+  "station": "blmglsou",
+  "element": "soil_vwc_0010",
+  "description": "Soil volumetric water content at 10 cm below surface",
+  "description_short": "Soil VWC @ -10 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 14
+ },
+ {
+  "station": "blmglsou",
+  "element": "soil_vwc_0020",
+  "description": "Soil volumetric water content at 20 cm below surface",
+  "description_short": "Soil VWC @ -20 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 15
+ },
+ {
+  "station": "blmglsou",
+  "element": "soil_vwc_0050",
+  "description": "Soil volumetric water content at 50 cm below surface",
+  "description_short": "Soil VWC @ -50 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 16
+ },
+ {
+  "station": "blmglsou",
+  "element": "soil_vwc_0091",
+  "description": "Soil volumetric water content at 91 cm below surface",
+  "description_short": "Soil VWC @ -91 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 17
+ },
+ {
+  "station": "blmglsou",
+  "element": "soil_ec_blk_0010",
+  "description": "Bulk soil electrical conductivity at 10 cm below surface",
+  "description_short": "Bulk EC @ -10 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 20
+ },
+ {
+  "station": "blmglsou",
+  "element": "soil_ec_blk_0020",
+  "description": "Bulk soil electrical conductivity at 20 cm below surface",
+  "description_short": "Bulk EC @ -20 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 21
+ },
+ {
+  "station": "blmglsou",
+  "element": "soil_ec_blk_0050",
+  "description": "Bulk soil electrical conductivity at 50 cm below surface",
+  "description_short": "Bulk EC @ -50 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 22
+ },
+ {
+  "station": "blmglsou",
+  "element": "soil_ec_blk_0091",
+  "description": "Bulk soil electrical conductivity at 91 cm below surface",
+  "description_short": "Bulk EC @ -91 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 23
+ },
+ {
+  "station": "blmglsou",
+  "element": "sol_rad",
+  "description": "Solar radiation",
+  "description_short": "Solar Radiation",
+  "base_units": "W m^-2",
+  "us_units": "W m^-2",
+  "sort_order": 25
+ },
+ {
+  "station": "blmglsou",
+  "element": "vpd_atmo",
+  "description": "Vapor pressure deficit",
+  "description_short": "VPD",
+  "base_units": "kPa",
+  "us_units": "millibar",
+  "sort_order": 26
+ },
+ {
+  "station": "blmglsou",
+  "element": "wind_dir_0244",
+  "description": "Wind direction at 8 ft",
+  "description_short": "Wind Direction @ 8 ft",
+  "base_units": "arcdeg",
+  "us_units": "arcdeg",
+  "sort_order": 28
+ },
+ {
+  "station": "blmglsou",
+  "element": "wind_spd_0244",
+  "description": "Wind speed at 8 ft",
+  "description_short": "Wind Speed @ 8 ft",
+  "base_units": "m s^-1",
+  "us_units": "mi hr^-1",
+  "sort_order": 30
+ },
+ {
+  "station": "blmglsou",
+  "element": "windgust_0244",
+  "description": "Maximum wind gust speed since previous report at 8 ft",
+  "description_short": "Gust Speed @ 8 ft",
+  "base_units": "m s^-1",
+  "us_units": "mi hr^-1",
+  "sort_order": 32
+ },
+ {
+  "station": "mdahogel",
+  "element": "air_temp_0244",
+  "description": "Air Temperature at 8 feet",
+  "description_short": "Air Temperature @ 8 ft",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 2
+ },
+ {
+  "station": "mdahogel",
+  "element": "ppt",
+  "description": "Net precipitation since previous report",
+  "description_short": "Precipitation",
+  "base_units": "mm",
+  "us_units": "in",
+  "sort_order": 3
+ },
+ {
+  "station": "mdahogel",
+  "element": "ppt_max_rate",
+  "description": "Maximum precipiation rate",
+  "description_short": "Max Precip Rate",
+  "base_units": "mm hr^-1",
+  "us_units": "in hr^-1",
+  "sort_order": 4
+ },
+ {
+  "station": "mdahogel",
+  "element": "bp",
+  "description": "Atmospheric Pressure",
+  "description_short": "Atmospheric Pressure",
+  "base_units": "kPa",
+  "us_units": "millibar",
+  "sort_order": 5
+ },
+ {
+  "station": "mdahogel",
+  "element": "rh",
+  "description": "Relative humidity",
+  "description_short": "Relative Humidity",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 6
+ },
+ {
+  "station": "mdahogel",
+  "element": "soil_temp_0010",
+  "description": "Soil temperature at 10 cm below surface",
+  "description_short": "Soil Temperature @ -10 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 8
+ },
+ {
+  "station": "mdahogel",
+  "element": "soil_temp_0020",
+  "description": "Soil temperature at 20 cm below surface",
+  "description_short": "Soil Temperature @ -20 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 9
+ },
+ {
+  "station": "mdahogel",
+  "element": "soil_temp_0050",
+  "description": "Soil temperature at 50 cm below surface",
+  "description_short": "Soil Temperature @ -50 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 10
+ },
+ {
+  "station": "mdahogel",
+  "element": "soil_temp_0091",
+  "description": "Soil temperature at 91 cm below surface",
+  "description_short": "Soil Temperature @ -91 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 11
+ },
+ {
+  "station": "mdahogel",
+  "element": "soil_vwc_0010",
+  "description": "Soil volumetric water content at 10 cm below surface",
+  "description_short": "Soil VWC @ -10 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 14
+ },
+ {
+  "station": "mdahogel",
+  "element": "soil_vwc_0020",
+  "description": "Soil volumetric water content at 20 cm below surface",
+  "description_short": "Soil VWC @ -20 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 15
+ },
+ {
+  "station": "mdahogel",
+  "element": "soil_vwc_0050",
+  "description": "Soil volumetric water content at 50 cm below surface",
+  "description_short": "Soil VWC @ -50 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 16
+ },
+ {
+  "station": "mdahogel",
+  "element": "soil_vwc_0091",
+  "description": "Soil volumetric water content at 91 cm below surface",
+  "description_short": "Soil VWC @ -91 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 17
+ },
+ {
+  "station": "mdahogel",
+  "element": "soil_ec_blk_0010",
+  "description": "Bulk soil electrical conductivity at 10 cm below surface",
+  "description_short": "Bulk EC @ -10 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 20
+ },
+ {
+  "station": "mdahogel",
+  "element": "soil_ec_blk_0020",
+  "description": "Bulk soil electrical conductivity at 20 cm below surface",
+  "description_short": "Bulk EC @ -20 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 21
+ },
+ {
+  "station": "mdahogel",
+  "element": "soil_ec_blk_0050",
+  "description": "Bulk soil electrical conductivity at 50 cm below surface",
+  "description_short": "Bulk EC @ -50 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 22
+ },
+ {
+  "station": "mdahogel",
+  "element": "soil_ec_blk_0091",
+  "description": "Bulk soil electrical conductivity at 91 cm below surface",
+  "description_short": "Bulk EC @ -91 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 23
+ },
+ {
+  "station": "mdahogel",
+  "element": "sol_rad",
+  "description": "Solar radiation",
+  "description_short": "Solar Radiation",
+  "base_units": "W m^-2",
+  "us_units": "W m^-2",
+  "sort_order": 25
+ },
+ {
+  "station": "mdahogel",
+  "element": "vpd_atmo",
+  "description": "Vapor pressure deficit",
+  "description_short": "VPD",
+  "base_units": "kPa",
+  "us_units": "millibar",
+  "sort_order": 26
+ },
+ {
+  "station": "mdahogel",
+  "element": "wind_dir_0244",
+  "description": "Wind direction at 8 ft",
+  "description_short": "Wind Direction @ 8 ft",
+  "base_units": "arcdeg",
+  "us_units": "arcdeg",
+  "sort_order": 28
+ },
+ {
+  "station": "mdahogel",
+  "element": "wind_spd_0244",
+  "description": "Wind speed at 8 ft",
+  "description_short": "Wind Speed @ 8 ft",
+  "base_units": "m s^-1",
+  "us_units": "mi hr^-1",
+  "sort_order": 30
+ },
+ {
+  "station": "mdahogel",
+  "element": "windgust_0244",
+  "description": "Maximum wind gust speed since previous report at 8 ft",
+  "description_short": "Gust Speed @ 8 ft",
+  "base_units": "m s^-1",
+  "us_units": "mi hr^-1",
+  "sort_order": 32
+ },
+ {
+  "station": "mdahogel",
+  "element": "well_eco",
+  "description": "Electrical conductivity of well water",
+  "description_short": "Well EC",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 33
+ },
+ {
+  "station": "mdahogel",
+  "element": "well_lvl",
+  "description": "Depth of well water",
+  "description_short": "Well Water Level",
+  "base_units": "mm",
+  "us_units": "in",
+  "sort_order": 34
+ },
+ {
+  "station": "mdahogel",
+  "element": "well_tmp",
+  "description": "Temperature of well water",
+  "description_short": "Well Water Temperature",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 35
+ },
+ {
+  "station": "wsrabsaw",
+  "element": "air_temp_0244",
+  "description": "Air Temperature at 8 feet",
+  "description_short": "Air Temperature @ 8 ft",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 2
+ },
+ {
+  "station": "wsrabsaw",
+  "element": "ppt",
+  "description": "Net precipitation since previous report",
+  "description_short": "Precipitation",
+  "base_units": "mm",
+  "us_units": "in",
+  "sort_order": 3
+ },
+ {
+  "station": "wsrabsaw",
+  "element": "ppt_max_rate",
+  "description": "Maximum precipiation rate",
+  "description_short": "Max Precip Rate",
+  "base_units": "mm hr^-1",
+  "us_units": "in hr^-1",
+  "sort_order": 4
+ },
+ {
+  "station": "wsrabsaw",
+  "element": "bp",
+  "description": "Atmospheric Pressure",
+  "description_short": "Atmospheric Pressure",
+  "base_units": "kPa",
+  "us_units": "millibar",
+  "sort_order": 5
+ },
+ {
+  "station": "wsrabsaw",
+  "element": "rh",
+  "description": "Relative humidity",
+  "description_short": "Relative Humidity",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 6
+ },
+ {
+  "station": "wsrabsaw",
+  "element": "soil_temp_0010",
+  "description": "Soil temperature at 10 cm below surface",
+  "description_short": "Soil Temperature @ -10 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 8
+ },
+ {
+  "station": "wsrabsaw",
+  "element": "soil_temp_0020",
+  "description": "Soil temperature at 20 cm below surface",
+  "description_short": "Soil Temperature @ -20 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 9
+ },
+ {
+  "station": "wsrabsaw",
+  "element": "soil_temp_0050",
+  "description": "Soil temperature at 50 cm below surface",
+  "description_short": "Soil Temperature @ -50 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 10
+ },
+ {
+  "station": "wsrabsaw",
+  "element": "soil_temp_0091",
+  "description": "Soil temperature at 91 cm below surface",
+  "description_short": "Soil Temperature @ -91 cm",
+  "base_units": "degC",
+  "us_units": "degF",
+  "sort_order": 11
+ },
+ {
+  "station": "wsrabsaw",
+  "element": "soil_vwc_0010",
+  "description": "Soil volumetric water content at 10 cm below surface",
+  "description_short": "Soil VWC @ -10 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 14
+ },
+ {
+  "station": "wsrabsaw",
+  "element": "soil_vwc_0020",
+  "description": "Soil volumetric water content at 20 cm below surface",
+  "description_short": "Soil VWC @ -20 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 15
+ },
+ {
+  "station": "wsrabsaw",
+  "element": "soil_vwc_0050",
+  "description": "Soil volumetric water content at 50 cm below surface",
+  "description_short": "Soil VWC @ -50 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 16
+ },
+ {
+  "station": "wsrabsaw",
+  "element": "soil_vwc_0091",
+  "description": "Soil volumetric water content at 91 cm below surface",
+  "description_short": "Soil VWC @ -91 cm",
+  "base_units": "percent",
+  "us_units": "percent",
+  "sort_order": 17
+ },
+ {
+  "station": "wsrabsaw",
+  "element": "soil_ec_blk_0010",
+  "description": "Bulk soil electrical conductivity at 10 cm below surface",
+  "description_short": "Bulk EC @ -10 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 20
+ },
+ {
+  "station": "wsrabsaw",
+  "element": "soil_ec_blk_0020",
+  "description": "Bulk soil electrical conductivity at 20 cm below surface",
+  "description_short": "Bulk EC @ -20 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 21
+ },
+ {
+  "station": "wsrabsaw",
+  "element": "soil_ec_blk_0050",
+  "description": "Bulk soil electrical conductivity at 50 cm below surface",
+  "description_short": "Bulk EC @ -50 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 22
+ },
+ {
+  "station": "wsrabsaw",
+  "element": "soil_ec_blk_0091",
+  "description": "Bulk soil electrical conductivity at 91 cm below surface",
+  "description_short": "Bulk EC @ -91 cm",
+  "base_units": "mS cm^-1",
+  "us_units": "mS cm^-1",
+  "sort_order": 23
+ },
+ {
+  "station": "wsrabsaw",
+  "element": "sol_rad",
+  "description": "Solar radiation",
+  "description_short": "Solar Radiation",
+  "base_units": "W m^-2",
+  "us_units": "W m^-2",
+  "sort_order": 25
+ },
+ {
+  "station": "wsrabsaw",
+  "element": "vpd_atmo",
+  "description": "Vapor pressure deficit",
+  "description_short": "VPD",
+  "base_units": "kPa",
+  "us_units": "millibar",
+  "sort_order": 26
+ },
+ {
+  "station": "wsrabsaw",
+  "element": "wind_dir_0244",
+  "description": "Wind direction at 8 ft",
+  "description_short": "Wind Direction @ 8 ft",
+  "base_units": "arcdeg",
+  "us_units": "arcdeg",
+  "sort_order": 28
+ },
+ {
+  "station": "wsrabsaw",
+  "element": "wind_spd_0244",
+  "description": "Wind speed at 8 ft",
+  "description_short": "Wind Speed @ 8 ft",
+  "base_units": "m s^-1",
+  "us_units": "mi hr^-1",
+  "sort_order": 30
+ },
+ {
+  "station": "wsrabsaw",
+  "element": "windgust_0244",
+  "description": "Maximum wind gust speed since previous report at 8 ft",
+  "description_short": "Gust Speed @ 8 ft",
+  "base_units": "m s^-1",
+  "us_units": "mi hr^-1",
+  "sort_order": 32
+ }
+]

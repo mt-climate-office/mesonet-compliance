@@ -1,0 +1,110 @@
+[
+ {
+  "station": "aceabsar",
+  "visited_this_year": true,
+  "qualifying_visits_this_year": 1,
+  "last_qualifying_visit_date": "2026-06-15",
+  "days_since_qualifying": 129,
+  "last_visit_date": "2026-06-15",
+  "last_trip_type": [
+   "Maintenance"
+  ],
+  "compliance_state": "visited"
+ },
+ {
+  "station": "acebento",
+  "visited_this_year": true,
+  "qualifying_visits_this_year": 1,
+  "last_qualifying_visit_date": "2026-05-14",
+  "days_since_qualifying": 161,
+  "last_visit_date": "2026-05-14",
+  "last_trip_type": [
+   "Repair"
+  ],
+  "compliance_state": "visited"
+ },
+ {
+  "station": "acerapel",
+  "visited_this_year": false,
+  "qualifying_visits_this_year": 0,
+  "last_qualifying_visit_date": "2024-04-23",
+  "days_since_qualifying": 912,
+  "last_visit_date": "2024-04-23",
+  "last_trip_type": [
+   "Maintenance"
+  ],
+  "compliance_state": "overdue"
+ },
+ {
+  "station": "arskeogh",
+  "visited_this_year": true,
+  "qualifying_visits_this_year": 1,
+  "last_qualifying_visit_date": "2026-08-07",
+  "days_since_qualifying": 76,
+  "last_visit_date": "2026-08-07",
+  "last_trip_type": [
+   "Maintenance"
+  ],
+  "compliance_state": "visited"
+ },
+ {
+  "station": "arskeose",
+  "visited_this_year": false,
+  "qualifying_visits_this_year": 0,
+  "last_qualifying_visit_date": "2024-08-15",
+  "days_since_qualifying": 798,
+  "last_visit_date": "2024-08-15",
+  "last_trip_type": [
+   "Maintenance"
+  ],
+  "compliance_state": "overdue"
+ },
+ {
+  "station": "arskeosw",
+  "visited_this_year": false,
+  "qualifying_visits_this_year": 0,
+  "last_qualifying_visit_date": "2024-08-14",
+  "days_since_qualifying": 799,
+  "last_visit_date": "2024-08-14",
+  "last_trip_type": [
+   "Maintenance"
+  ],
+  "compliance_state": "overdue"
+ },
+ {
+  "station": "bentlake",
+  "visited_this_year": false,
+  "qualifying_visits_this_year": 0,
+  "last_qualifying_visit_date": "2024-08-06",
+  "days_since_qualifying": 807,
+  "last_visit_date": "2024-08-06",
+  "last_trip_type": [
+   "Maintenance"
+  ],
+  "compliance_state": "overdue"
+ },
+ {
+  "station": "blmglsou",
+  "visited_this_year": false,
+  "qualifying_visits_this_year": 0,
+  "last_qualifying_visit_date": "2024-08-22",
+  "days_since_qualifying": 791,
+  "last_visit_date": "2024-08-22",
+  "last_trip_type": [
+   "Maintenance"
+  ],
+  "compliance_state": "overdue"
+ },
+ {
+  "station": "wsrabsaw",
+  "visited_this_year": false,
+  "qualifying_visits_this_year": 0,
+  "last_qualifying_visit_date": "2024-07-25",
+  "days_since_qualifying": 819,
+  "last_visit_date": "2024-07-25",
+  "last_trip_type": [
+   "Maintenance"
+  ],
+  "compliance_state": "overdue"
+ }
+]

@@ -1,0 +1,4 @@
+# Copy to terraform.tfvars (gitignored). Placeholders only in this file.
+
+# gh api repos/mt-climate-office/mesonet-compliance --jq .id
+github_repository_id = "000000000"

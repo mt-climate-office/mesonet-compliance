@@ -1,0 +1,21 @@
+{
+ "captured_at": 1792689490000,
+ "api": "https://mesonet2.climate.umt.edu/api/v2",
+ "stations": [
+  "aceabsar",
+  "acealbio",
+  "acebaker",
+  "acebento",
+  "acedodso",
+  "arskeogh",
+  "arskeose",
+  "arskeosw",
+  "blmglsou",
+  "mdahogel",
+  "wsrabsaw"
+ ],
+ "orphans": [
+  "acerapel",
+  "bentlake"
+ ]
+}

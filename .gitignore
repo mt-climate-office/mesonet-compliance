@@ -1,0 +1,7 @@
+out/
+node_modules/
+.DS_Store
+# terraform: the lockfile IS committed (mco-aws conventions); real values and plans are not
+terraform/.terraform/
+terraform/terraform.tfvars
+terraform/*.tfplan
