@@ -47,7 +47,7 @@ test('fixture: the co-located site', () => {
   assert.deepEqual(shared.map((m) => m.map((s) => s.station)), [['aceabsar', 'wsrabsaw']]);
 });
 
-test('fixture: maintenance states, app rules and feed tally side by side (D4)', () => {
+test('fixture: maintenance states by the app rules', () => {
   const m = R.assessMaintenance({ stations, maintenance, now: NOW });
   assert.equal(m.year, 2026);
   assert.deepEqual(Object.fromEntries(m.rows.map((r) => [r.station, r.state])), {
@@ -56,17 +56,15 @@ test('fixture: maintenance states, app rules and feed tally side by side (D4)', 
     arskeogh: 'as_needed', arskeose: 'as_needed', arskeosw: 'as_needed',
     blmglsou: 'as_needed', mdahogel: 'as_needed', wsrabsaw: 'as_needed',
   });
-  // The feed marks AgriMet stations and decommissioned slugs overdue.
-  assert.deepEqual(R.feedComplianceCounts(maintenance), { visited: 3, overdue: 6 });
-  const overdue = maintenance.filter((x) => x.compliance_state === 'overdue').map((x) => x.station).sort();
-  assert.deepEqual(overdue, ['acerapel', 'arskeose', 'arskeosw', 'bentlake', 'blmglsou', 'wsrabsaw']);
+  // Feed rows for slugs /stations does not list are ignored, not counted.
+  assert.equal(m.rows.some((r) => r.station === 'acerapel' || r.station === 'bentlake'), false);
 });
 
 test('fixture: maintenance rows carry no personal data', () => {
   for (const row of maintenance) {
     assert.equal('visits' in row, false);
     assert.deepEqual(Object.keys(row).sort(), [
-      'compliance_state', 'days_since_qualifying', 'last_qualifying_visit_date', 'last_trip_type',
+      'days_since_qualifying', 'last_qualifying_visit_date', 'last_trip_type',
       'last_visit_date', 'qualifying_visits_this_year', 'station', 'visited_this_year',
     ]);
   }

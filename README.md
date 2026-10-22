@@ -144,11 +144,12 @@ yet. Example, from live data at 11:51 MDT on 22 Oct 2026:
 | `latest_newest` | Newest `datetime` in `/latest/`, epoch ms |
 | `reporting.pct`, `health.pct` | Whole percent of `stations.total`, **floored** |
 
-**No maintenance section.** Per D4 and D15 the maintenance-compliance figure
-is not published until the API's `compliance_state` agrees with the
-Maintenance app's rules. The file is at a public URL, so it leaves the
-section out entirely rather than carrying it behind a flag. The job does not
-read the maintenance feed at all.
+**No maintenance section.** Per D15 the maintenance-compliance figure is not
+in the summary. The file is at a public URL, so the section is left out
+entirely rather than carried behind a flag. The job does not read the
+maintenance feed at all. The maintenance rules in the module are the
+definition of compliance (D4); the API's old `compliance_state` field is
+being removed (mesonet-db-rds #222), and nothing here reads it.
 
 **Percentages are floored** (D15), so 100 means every station and 0 means
 none. With 252 of 253 reporting, `reporting.pct` reads 99. This departs from
@@ -191,7 +192,7 @@ stays published.
 node --test
 ```
 
-28 tests. Unit tests take each rule through its edges with hand-built inputs.
+27 tests. Unit tests take each rule through its edges with hand-built inputs.
 Fixture tests pin per-station results on 11 stations captured live on
 22 Oct 2026 (`test/fixtures/2026-10-22/`), chosen to cover every class present
 that day. The feed fixture keeps only the fields the rules read; `visits` is

@@ -194,12 +194,3 @@ test('assessMaintenance: an empty feed is unavailable; coordinates coerce (null 
   assert.deepEqual(ok.rows.map((r) => [r.station, r.state]), [['a', 'visited'], ['b', 'overdue']]);
   assert.equal(ok.year, 2026);
 });
-
-test('feedComplianceCounts counts every feed row, whatever its network or registry status', () => {
-  assert.deepEqual(R.feedComplianceCounts([
-    { station: 'x', compliance_state: 'visited' },
-    { station: 'y', compliance_state: 'overdue' },
-    { station: 'gone', compliance_state: 'overdue' },
-  ]), { visited: 1, overdue: 2 });
-  assert.deepEqual(R.feedComplianceCounts(null), { visited: 0, overdue: 0 });
-});

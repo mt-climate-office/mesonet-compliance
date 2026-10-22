@@ -53,7 +53,6 @@ export const TZ = 'America/Denver';
  *   this module never reads and never emits.
  * @property {string} station
  * @property {boolean} visited_this_year
- * @property {'visited'|'overdue'} compliance_state
  */
 
 // ── Shared helpers ──────────────────────────────────────────────────────────
@@ -357,19 +356,6 @@ export function assessMaintenance({ stations, maintenance, now }) {
 export function summarizeMaintenance(rows) {
   const out = { visited: 0, overdue: 0, new: 0, as_needed: 0, nodata: 0 };
   for (const r of rows) out[r.state]++;
-  return out;
-}
-
-/**
- * The feed's own `compliance_state` tally — the figure D4 compares against.
- * It covers every feed row: any network, and slugs absent from /stations.
- * @param {MaintenanceRecord[]|null} maintenance
- */
-export function feedComplianceCounts(maintenance) {
-  const out = { visited: 0, overdue: 0 };
-  for (const m of Array.isArray(maintenance) ? maintenance : []) {
-    if (m.compliance_state in out) out[m.compliance_state]++;
-  }
   return out;
 }
 

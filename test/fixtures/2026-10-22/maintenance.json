@@ -8,8 +8,7 @@
   "last_visit_date": "2026-06-15",
   "last_trip_type": [
    "Maintenance"
-  ],
-  "compliance_state": "visited"
+  ]
  },
  {
   "station": "acebento",
@@ -20,8 +19,7 @@
   "last_visit_date": "2026-05-14",
   "last_trip_type": [
    "Repair"
-  ],
-  "compliance_state": "visited"
+  ]
  },
  {
   "station": "acerapel",
@@ -32,8 +30,7 @@
   "last_visit_date": "2024-04-23",
   "last_trip_type": [
    "Maintenance"
-  ],
-  "compliance_state": "overdue"
+  ]
  },
  {
   "station": "arskeogh",
@@ -44,8 +41,7 @@
   "last_visit_date": "2026-08-07",
   "last_trip_type": [
    "Maintenance"
-  ],
-  "compliance_state": "visited"
+  ]
  },
  {
   "station": "arskeose",
@@ -56,8 +52,7 @@
   "last_visit_date": "2024-08-15",
   "last_trip_type": [
    "Maintenance"
-  ],
-  "compliance_state": "overdue"
+  ]
  },
  {
   "station": "arskeosw",
@@ -68,8 +63,7 @@
   "last_visit_date": "2024-08-14",
   "last_trip_type": [
    "Maintenance"
-  ],
-  "compliance_state": "overdue"
+  ]
  },
  {
   "station": "bentlake",
@@ -80,8 +74,7 @@
   "last_visit_date": "2024-08-06",
   "last_trip_type": [
    "Maintenance"
-  ],
-  "compliance_state": "overdue"
+  ]
  },
  {
   "station": "blmglsou",
@@ -92,8 +85,7 @@
   "last_visit_date": "2024-08-22",
   "last_trip_type": [
    "Maintenance"
-  ],
-  "compliance_state": "overdue"
+  ]
  },
  {
   "station": "wsrabsaw",
@@ -104,7 +96,6 @@
   "last_visit_date": "2024-07-25",
   "last_trip_type": [
    "Maintenance"
-  ],
-  "compliance_state": "overdue"
+  ]
  }
 ]

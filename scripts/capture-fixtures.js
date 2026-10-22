@@ -39,7 +39,7 @@ take(health, (r) => r.health === 'outage', 2);
 take(maint, (r) => r.state === 'new', 2);
 take(maint, (r) => r.state === 'visited', 1);
 take(maint, (r) => r.state === 'overdue', 1);
-take(maint, (r) => r.state === 'as_needed' && feedById.get(r.station)?.compliance_state === 'overdue', 2);
+take(maint, (r) => r.state === 'as_needed' && !feedById.get(r.station)?.visited_this_year, 2);
 take(maint, (r) => r.state === 'as_needed' && feedById.get(r.station)?.visited_this_year, 1);
 // One co-located site, both members.
 const site = [...R.colocation(stations).values()].find((m) => m.length > 1);
@@ -48,7 +48,7 @@ site.forEach((s) => pick.add(s.station));
 const orphans = maintenance.filter((m) => !stationIds.has(m.station)).slice(0, 2).map((m) => m.station);
 
 const RULE_FIELDS = ['station', 'visited_this_year', 'qualifying_visits_this_year',
-  'last_qualifying_visit_date', 'days_since_qualifying', 'last_visit_date', 'last_trip_type', 'compliance_state'];
+  'last_qualifying_visit_date', 'days_since_qualifying', 'last_visit_date', 'last_trip_type'];
 const scrub = (m) => Object.fromEntries(RULE_FIELDS.map((k) => [k, m[k]]));
 
 const out = {
