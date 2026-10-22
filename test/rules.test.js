@@ -155,11 +155,14 @@ test('montanaYear turns over at midnight Mountain, not UTC', () => {
   assert.equal(R.montanaDate(Date.UTC(2026, 9, 22, 3)), '2026-10-21');
 });
 
-test('installedInYear: epoch ms read in Montana time; date-only strings read as dates', () => {
+test('installedInYear: date_installed is a Montana calendar date stored at 00:00 UTC', () => {
   assert.equal(R.installedInYear({ date_installed: null }, 2026), false);
   assert.equal(R.installedInYear({ date_installed: Date.UTC(2026, 4, 1) }, 2026), true);
-  // 00:00 UTC on 1 Jan 2026 is 31 Dec 2025 in Montana.
-  assert.equal(R.installedInYear({ date_installed: Date.UTC(2026, 0, 1) }, 2026), false);
+  // 1 Jan 2026 in Montana, encoded as 00:00 UTC that day: installed in 2026.
+  assert.equal(R.installedInYear({ date_installed: Date.UTC(2026, 0, 1) }, 2026), true);
+  assert.equal(R.installedInYear({ date_installed: Date.UTC(2026, 0, 1) }, 2025), false);
+  // 31 Dec 2025 in Montana: still 2025.
+  assert.equal(R.installedInYear({ date_installed: Date.UTC(2025, 11, 31) }, 2025), true);
   assert.equal(R.installedInYear({ date_installed: '2026-01-01' }, 2026), true);
   assert.equal(R.installedInYear({ date_installed: 'not a date' }, 2026), false);
 });
