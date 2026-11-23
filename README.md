@@ -11,9 +11,10 @@ Decision D5 in `mco-website-next/docs/DECISIONS.md` set this up. Until now the
 rules lived only inside the Status and Maintenance apps, and the website would
 have been a third copy.
 
-Status: **not yet deployed.** The infrastructure is in `terraform/`, planned
-but not applied, and the data2 object does not exist yet. See
-[Deploying](#deploying).
+Status: **deployed 22 Oct 2026.** The function runs on its schedule and
+writes `compliance/v1/summary.json`. The public README for the prefix
+(`public/README.md`, published by `terraform/readme.tf`) carries the data2
+provenance block. See [Deploying](#deploying).
 
 ## The rules
 
@@ -108,8 +109,7 @@ https://data2.climate.umt.edu/mesonet/compliance/v1/summary.json
 ```
 
 Served with `Content-Type: application/json; charset=utf-8` and
-`Cache-Control: public, max-age=60`, CORS as for the rest of data2. Not live
-yet. Example, from live data at 11:51 MDT on 22 Oct 2026:
+`Cache-Control: public, max-age=60`, CORS as for the rest of data2. Example, from live data at 11:51 MDT on 22 Oct 2026:
 
 ```json
 {
@@ -255,6 +255,12 @@ local.
 | CI role | `mesonet-compliance-github-actions`, `main` only, repo-ID pinned: ECR push, and `GetFunction`/`UpdateFunctionCode`/`InvokeFunction` on this one function |
 
 The bucket and the data2 CDN need no change.
+
+`terraform/readme.tf` publishes `public/README.md` to
+`compliance/README.md` (`text/markdown`, `Cache-Control: public,
+max-age=3600`), as mco-aws publishes the bucket's root README. It is static,
+so Terraform writes it, not the function; a change to it needs a
+`terraform plan`/`apply`, not a deploy.
 
 **First apply, in two stages.** A container Lambda cannot be created until its
 image is in ECR, and the image cannot be pushed until the repository exists.
