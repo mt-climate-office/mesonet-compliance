@@ -65,6 +65,12 @@ hour old, the summary has stopped updating.
 The maintenance visit rules are in the same code, but no maintenance figure is
 published here.
 
+## License
+
+Montana Mesonet data are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Credit: Montana
+Mesonet, Montana Climate Office. A service of the University of Montana.
+[How to cite the data](https://climate.umt.edu/mesonet/citation/).
+
 ## Questions
 
 Montana Climate Office, University of Montana: state.climatologist@umontana.edu
